@@ -1,3 +1,6 @@
 # de-zoomcamp
 
-##### Solved in cmd
+##### Solved in cmd. Need to solve it accordingly
+
+
+
