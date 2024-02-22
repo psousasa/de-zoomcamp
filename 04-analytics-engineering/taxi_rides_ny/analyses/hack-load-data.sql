@@ -20,9 +20,9 @@ SELECT * FROM `bigquery-public-data.new_york_taxi_trips.tlc_yellow_trips_2020`;
 ALTER TABLE `hybrid-saga-412112.trips_data_all.yellow_tripdata`
   RENAME COLUMN vendor_id TO VendorID;
 ALTER TABLE `hybrid-saga-412112.trips_data_all.yellow_tripdata`
-  RENAME COLUMN pickup_datetime TO tpep_pickup_datetime;
+  RENAME COLUMN tpep_pickup_datetime TO lpep_pickup_datetime;
 ALTER TABLE `hybrid-saga-412112.trips_data_all.yellow_tripdata`
-  RENAME COLUMN dropoff_datetime TO tpep_dropoff_datetime;
+  RENAME COLUMN tpep_dropoff_datetime TO lpep_dropoff_datetime;
 ALTER TABLE `hybrid-saga-412112.trips_data_all.yellow_tripdata`
   RENAME COLUMN rate_code TO RatecodeID;
 ALTER TABLE `hybrid-saga-412112.trips_data_all.yellow_tripdata`
@@ -49,4 +49,4 @@ ALTER TABLE `hybrid-saga-412112.trips_data_all.green_tripdata`
   RENAME COLUMN dropoff_location_id TO DOLocationID;
 
 
-  select * from `hybrid-saga-412112.trips_data_all.yellow_tripdata` limit 100
+  select * from `hybrid-saga-412112.trips_data_all.green_tripdata` limit 100
